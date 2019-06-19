@@ -1,0 +1,6 @@
+framework module Pods_SWToast {
+  umbrella header "Pods-SWToast-umbrella.h"
+
+  export *
+  module * { export * }
+}

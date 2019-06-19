@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8066FF2A0C4949F50B54BCC9 /* Pods_SWToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FD9594BA73172B5766246C /* Pods_SWToast.framework */; };
 		E6CD0FFC22BA07A6005E9741 /* SWToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6CD0FF222BA07A6005E9741 /* SWToast.framework */; };
 		E6CD100122BA07A6005E9741 /* SWToastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CD100022BA07A6005E9741 /* SWToastTests.swift */; };
 		E6CD100322BA07A6005E9741 /* SWToast.h in Headers */ = {isa = PBXBuildFile; fileRef = E6CD0FF522BA07A6005E9741 /* SWToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6CD100D22BA0868005E9741 /* Toast in Resources */ = {isa = PBXBuildFile; fileRef = E6CD100C22BA0868005E9741 /* Toast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +25,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08FD9594BA73172B5766246C /* Pods_SWToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C12A014DE826305E30370CCB /* Pods-SWToast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWToast.debug.xcconfig"; path = "Target Support Files/Pods-SWToast/Pods-SWToast.debug.xcconfig"; sourceTree = "<group>"; };
+		E21E6E255156390F96E3BFE6 /* Pods-SWToast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWToast.release.xcconfig"; path = "Target Support Files/Pods-SWToast/Pods-SWToast.release.xcconfig"; sourceTree = "<group>"; };
 		E6CD0FF222BA07A6005E9741 /* SWToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CD0FF522BA07A6005E9741 /* SWToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWToast.h; sourceTree = "<group>"; };
 		E6CD0FF622BA07A6005E9741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6CD0FFB22BA07A6005E9741 /* SWToastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWToastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CD100022BA07A6005E9741 /* SWToastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWToastTests.swift; sourceTree = "<group>"; };
 		E6CD100222BA07A6005E9741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6CD100C22BA0868005E9741 /* Toast */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Toast; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8066FF2A0C4949F50B54BCC9 /* Pods_SWToast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +57,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		532DDF9007225797089CA97F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08FD9594BA73172B5766246C /* Pods_SWToast.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5975045821D6F0303E2B7F24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C12A014DE826305E30370CCB /* Pods-SWToast.debug.xcconfig */,
+				E21E6E255156390F96E3BFE6 /* Pods-SWToast.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E6CD0FE822BA07A6005E9741 = {
 			isa = PBXGroup;
 			children = (
 				E6CD0FF422BA07A6005E9741 /* SWToast */,
 				E6CD0FFF22BA07A6005E9741 /* SWToastTests */,
 				E6CD0FF322BA07A6005E9741 /* Products */,
+				5975045821D6F0303E2B7F24 /* Pods */,
+				532DDF9007225797089CA97F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +98,7 @@
 		E6CD0FF422BA07A6005E9741 /* SWToast */ = {
 			isa = PBXGroup;
 			children = (
+				E6CD100C22BA0868005E9741 /* Toast */,
 				E6CD0FF522BA07A6005E9741 /* SWToast.h */,
 				E6CD0FF622BA07A6005E9741 /* Info.plist */,
 			);
@@ -104,6 +132,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6CD100622BA07A6005E9741 /* Build configuration list for PBXNativeTarget "SWToast" */;
 			buildPhases = (
+				4B6DD887CD4D4BD041A8C5AA /* [CP] Check Pods Manifest.lock */,
 				E6CD0FED22BA07A6005E9741 /* Headers */,
 				E6CD0FEE22BA07A6005E9741 /* Sources */,
 				E6CD0FEF22BA07A6005E9741 /* Frameworks */,
@@ -177,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6CD100D22BA0868005E9741 /* Toast in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +218,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B6DD887CD4D4BD041A8C5AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SWToast-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E6CD0FEE22BA07A6005E9741 /* Sources */ = {
@@ -340,6 +395,7 @@
 		};
 		E6CD100722BA07A6005E9741 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C12A014DE826305E30370CCB /* Pods-SWToast.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -350,6 +406,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SWToast/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -365,6 +422,7 @@
 		};
 		E6CD100822BA07A6005E9741 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E21E6E255156390F96E3BFE6 /* Pods-SWToast.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +433,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SWToast/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
