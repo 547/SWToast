@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 import GSMessages
 
-struct Toast {
-    static func makeTextFromTop(context: UIViewController, text: String, duration: Toast.Duration, style: Toast.Style) {
+public struct Toast {
+    public static func makeTextFromTop(context: UIViewController, text: String, duration: Toast.Duration, style: Toast.Style) {
         var messageType: GSMessageType = .success
         switch style {
         case .error:    messageType = .error
@@ -35,7 +35,7 @@ struct Toast {
         )
 
     }
-    static func makeTextFromBottom(context: UIViewController, text: String, duration: Toast.Duration, style: Toast.Style) {
+    public static func makeTextFromBottom(context: UIViewController, text: String, duration: Toast.Duration, style: Toast.Style) {
         var messageType: GSMessageType = .success
         switch style {
         case .error:    messageType = .error
@@ -61,15 +61,15 @@ struct Toast {
 }
 
 extension Toast {
-    enum Duration: TimeInterval {
+    public enum Duration: TimeInterval {
         case short  = 2.0
         case long   = 3.5
         
-        var milliseconds: Int {
+        public var milliseconds: Int {
             return Int(self.rawValue * 1000)
         }
     }
-    enum Style {
+    public enum Style {
         case success, error, warning, info
     }
 }
