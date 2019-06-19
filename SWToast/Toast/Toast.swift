@@ -11,6 +11,9 @@ import UIKit
 import GSMessages
 
 public struct SWToast {
+    public static func setupWithFont(_ font:UIFont = UIFont.systemFont(ofSize: 15)) {
+        GSMessage.font = font
+    }
     public static func makeTextFromTop(context: UIViewController, text: String, duration: SWToast.Duration, style: SWToast.Style) {
         var messageType: GSMessageType = .success
         switch style {
