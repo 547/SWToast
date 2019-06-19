@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
 根据平时项目的需要在 GSMessages的基础上封装了便利的方法.
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/SWToast"
+  spec.homepage     = "https://github.com/547/SWToast"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/SWToast.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/547/SWToast.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
