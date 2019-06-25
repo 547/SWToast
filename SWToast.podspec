@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SWToast"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "在 GSMessages的基础上封装了便利的方法."
 
   # This description is used to generate tags and improve search results.

@@ -1,5 +1,5 @@
 //
-//  Toast.swift
+//  SWToast.swift
 //  SWToast
 //
 //  Created by Supernova SanDick SSD on 2019/6/19.

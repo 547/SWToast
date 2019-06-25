@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8066FF2A0C4949F50B54BCC9 /* Pods_SWToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FD9594BA73172B5766246C /* Pods_SWToast.framework */; };
+		E618567022C22EC900ED56D8 /* SWToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618566F22C22EC900ED56D8 /* SWToast.swift */; };
 		E6CD0FFC22BA07A6005E9741 /* SWToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6CD0FF222BA07A6005E9741 /* SWToast.framework */; };
 		E6CD100122BA07A6005E9741 /* SWToastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CD100022BA07A6005E9741 /* SWToastTests.swift */; };
 		E6CD100322BA07A6005E9741 /* SWToast.h in Headers */ = {isa = PBXBuildFile; fileRef = E6CD0FF522BA07A6005E9741 /* SWToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6CD100D22BA0868005E9741 /* Toast in Resources */ = {isa = PBXBuildFile; fileRef = E6CD100C22BA0868005E9741 /* Toast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,13 +28,13 @@
 		08FD9594BA73172B5766246C /* Pods_SWToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12A014DE826305E30370CCB /* Pods-SWToast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWToast.debug.xcconfig"; path = "Target Support Files/Pods-SWToast/Pods-SWToast.debug.xcconfig"; sourceTree = "<group>"; };
 		E21E6E255156390F96E3BFE6 /* Pods-SWToast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWToast.release.xcconfig"; path = "Target Support Files/Pods-SWToast/Pods-SWToast.release.xcconfig"; sourceTree = "<group>"; };
+		E618566F22C22EC900ED56D8 /* SWToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWToast.swift; sourceTree = "<group>"; };
 		E6CD0FF222BA07A6005E9741 /* SWToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CD0FF522BA07A6005E9741 /* SWToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWToast.h; sourceTree = "<group>"; };
 		E6CD0FF622BA07A6005E9741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6CD0FFB22BA07A6005E9741 /* SWToastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWToastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CD100022BA07A6005E9741 /* SWToastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWToastTests.swift; sourceTree = "<group>"; };
 		E6CD100222BA07A6005E9741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E6CD100C22BA0868005E9741 /* Toast */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Toast; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,6 @@
 				C12A014DE826305E30370CCB /* Pods-SWToast.debug.xcconfig */,
 				E21E6E255156390F96E3BFE6 /* Pods-SWToast.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -98,7 +97,7 @@
 		E6CD0FF422BA07A6005E9741 /* SWToast */ = {
 			isa = PBXGroup;
 			children = (
-				E6CD100C22BA0868005E9741 /* Toast */,
+				E618566F22C22EC900ED56D8 /* SWToast.swift */,
 				E6CD0FF522BA07A6005E9741 /* SWToast.h */,
 				E6CD0FF622BA07A6005E9741 /* Info.plist */,
 			);
@@ -177,6 +176,7 @@
 				TargetAttributes = {
 					E6CD0FF122BA07A6005E9741 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					E6CD0FFA22BA07A6005E9741 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -206,7 +206,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6CD100D22BA0868005E9741 /* Toast in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E618567022C22EC900ED56D8 /* SWToast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +397,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C12A014DE826305E30370CCB /* Pods-SWToast.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -415,6 +416,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Seven.SWToast;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -424,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E21E6E255156390F96E3BFE6 /* Pods-SWToast.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -450,6 +453,7 @@
 		E6CD100A22BA07A6005E9741 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GTWT2P766B;
 				INFOPLIST_FILE = SWToastTests/Info.plist;
@@ -468,6 +472,7 @@
 		E6CD100B22BA07A6005E9741 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GTWT2P766B;
 				INFOPLIST_FILE = SWToastTests/Info.plist;
